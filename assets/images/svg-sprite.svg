@@ -1,0 +1,15 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.531 10.531" id="Icon-feather-arrow-up-right">
+    <g id="Icon_feather-arrow-up-right" transform="translate(-9.439 -9.439)">
+      <path id="Path_92" d="M10.5,18.91l8.41-8.41" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+      <path id="Path_93" d="M10.5,10.5h8.41v8.41" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.946 14.72" id="Icon-ionic-ios-calendar">
+    <g id="Icon_ionic-ios-calendar" transform="translate(-3.375 -4.5)">
+      <path id="Pfad_105" d="M17.788,6.75H16.255v.92a.308.308,0,0,1-.307.307h-.613a.308.308,0,0,1-.307-.307V6.75H7.668v.92a.308.308,0,0,1-.307.307H6.748a.308.308,0,0,1-.307-.307V6.75H4.908A1.538,1.538,0,0,0,3.375,8.283V18.71a1.538,1.538,0,0,0,1.533,1.533h12.88a1.538,1.538,0,0,0,1.533-1.533V8.283A1.538,1.538,0,0,0,17.788,6.75Zm.307,11.5a.769.769,0,0,1-.767.767H5.368A.769.769,0,0,1,4.6,18.25v-6.9a.308.308,0,0,1,.307-.307h12.88a.308.308,0,0,1,.307.307Z" transform="translate(0 -1.023)" fill="#f3f3f3"></path>
+      <path id="Pfad_106" d="M10.227,4.807A.308.308,0,0,0,9.92,4.5H9.307A.308.308,0,0,0,9,4.807v.92h1.227Z" transform="translate(-2.558)" fill="#f3f3f3"></path>
+      <path id="Pfad_107" d="M25.977,4.807A.308.308,0,0,0,25.67,4.5h-.613a.308.308,0,0,0-.307.307v.92h1.227Z" transform="translate(-9.722)" fill="#f3f3f3"></path>
+    </g>
+  </symbol>
+</svg>

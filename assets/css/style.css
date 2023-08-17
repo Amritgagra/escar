@@ -139,8 +139,20 @@ a {
   }
 }
 
-.text-accent {
+.text__accent {
   color: #0066B2 !important;
+}
+
+.text__light {
+  color: #F3F3F3;
+}
+
+.text__dark-light {
+  color: #C2C2C2;
+}
+
+.text__dark {
+  color: #161615;
 }
 
 .bg__accent {
@@ -155,12 +167,12 @@ a {
   background: #161615;
 }
 
-.text__light {
-  color: #F3F3F3;
+.bg__white {
+  background: #fff;
 }
 
-.text__dark-light {
-  color: #C2C2C2;
+.fw-medium {
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1800px) {
@@ -192,7 +204,7 @@ a {
 }
 
 .block-margin {
-  margin-block: 160px 120px;
+  margin-block: 160px;
 }
 @media screen and (max-width: 992px) {
   .block-margin {
@@ -207,6 +219,81 @@ a {
   .block-margin-xl {
     margin-block: 100px;
   }
+}
+
+.caleder-icon {
+  width: 16px;
+  height: 15px;
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.conference {
+  margin-top: -160px;
+}
+.conference .custom-card {
+  padding: 38px 40px;
+  background: #0056A4;
+  min-width: 360px;
+}
+.conference .card__content {
+  max-width: 216px;
+}
+.conference .card-link {
+  color: #F3F3F3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.conference::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 160px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(20%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: #0056A4;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  opacity: 1 !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #0566BE;
+}
+
+.swiper-button-next img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media screen and (min-width: 1550px) {

@@ -34,8 +34,19 @@ a {
     }
 }
 
-.text-accent {
+
+.text__accent {
     color: $clr-accent !important;
+}
+.text__light {
+    color: $clr-light;
+}
+
+.text__dark-light {
+    color: $clr-dark-300;
+}
+.text__dark {
+    color: $clr-dark;
 }
 
 .bg__accent {
@@ -48,14 +59,15 @@ a {
 .bg__dark {
     background: $clr-dark;
 }
-
-
-.text__light {
-    color: $clr-light;
+.bg__white {
+    background: $clr-white;
 }
 
-.text__dark-light {
-    color: $clr-dark-300;
+
+
+
+.fw-medium {
+    font-weight: 500;
 }
 
 br {
@@ -63,6 +75,7 @@ br {
         display: none;
     }
 }
+
 
 .block-padding{
     padding-block: 160px 120px;
@@ -81,7 +94,7 @@ br {
 }
 
 .block-margin {
-    margin-block: 160px 120px;
+    margin-block: 160px;
     @include mq(lg) {
         margin-block: 100px;
     }
@@ -92,3 +105,90 @@ br {
         margin-block: 100px;
     }
 }
+
+.caleder-icon { 
+    width: 16px; 
+    height: 15px; 
+  }
+  .arrow-icon {
+    width: 10px;
+    height: 10px; 
+  }
+
+
+//   conference
+.conference {
+    margin-top: -160px;
+    .custom-card {
+        padding: 38px 40px;
+        background: $clr-accent-dark;
+        min-width: 360px;
+    }
+    .card {
+        &__content {
+            max-width: 216px;
+        }
+        &-link {
+            color: $clr-light;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 160px;
+        // background: linear-gradient(to bottom, rgba(255,255,255,.5) 5%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient( to top,#fff 0%,  rgba(255, 255, 255, .8) 20% , rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// swiper {
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: $clr-accent-dark;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        opacity: 1 !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        cursor: pointer !important;
+        &:hover  {
+            background: $clr-btn-hover;
+        }
+    }
+
+    .swiper-button-next img {
+        transform:  rotate(180deg);
+    }
