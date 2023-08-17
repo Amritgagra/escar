@@ -26,6 +26,8 @@ h1{
     line-height: 75px;
     font-weight: 600;
     text-transform: uppercase;
+    color: $clr-light;
+    margin-bottom: 24px;
     @include mq(sm){
         font-size: 35px;
         line-height:45px;
