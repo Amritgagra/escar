@@ -1,0 +1,94 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.min-h-inherit {
+    min-height: inherit;
+}
+.h-vh-100 {
+    min-height: 100vh;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+    @include mq(lg) {
+        margin-bottom: 15px;
+    }
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+    @include mq(lg) {
+        margin-bottom: 30px;
+    }
+}
+
+.text-accent {
+    color: $clr-accent !important;
+}
+
+.bg__accent {
+    background: $clr-accent;
+}
+
+.bg__light {
+    background: $clr-light;
+}
+.bg__dark {
+    background: $clr-dark;
+}
+
+
+.text__light {
+    color: $clr-light;
+}
+
+.text__dark-light {
+    color: $clr-dark-300;
+}
+
+br {
+    @include mq(xxxl) {
+        display: none;
+    }
+}
+
+.block-padding{
+    padding-block: 160px 120px;
+    @include mq(lg) {
+        padding-block: 120px;
+     }
+}
+.block-padding-lg{
+    padding-block: 160px 160px;
+}
+.block-padding-xl{
+    padding-block: 200px;
+    @include mq(lg) {
+        padding-block: 100px;
+    }
+}
+
+.block-margin {
+    margin-block: 160px 120px;
+    @include mq(lg) {
+        margin-block: 100px;
+    }
+}
+.block-margin-xl {
+    margin-block: 200px;
+    @include mq(lg) {
+        margin-block: 100px;
+    }
+}
