@@ -1,80 +1,28 @@
-// .btn {
-//     font-size: 20px;
-//     line-height: 25px;
-//     font-family: 'Hanken Grotesk', sans-serif;
-//     color: $clr-light;
-//     padding: 11px 30px;
-//     border-image-slice: 20;
-//     border-image-width: 20;
-//     border-image-outset: 1;
-//     border-image-repeat: stretch;
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 8px;
-//     font-weight: 500;
-//     @include mq(sm) {
-//         font-size: 15px;
-//         line-height: 20px;
-//     }
-// }
+.btn {
+    font-size: 17px;
+    line-height: 27px;
+    color: $clr-light;
+    padding: 12px 39px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: 2px;
+    @include mq(sm) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
 
-// .btn__accent {
-    
-//     border-image-source: url(../images/btn/btn-accent-bg.svg);
+.btn__accent {
+    background: $clr-accent-dark !important;
+    border: 1px solid $clr-accent !important;
+    &:hover,
+    &:focus {
+        color: $clr-light !important;
+        background: $clr-btn-hover !important;
+    }
   
-//     svg {
-//         opacity: .5;
-//         transition: all .3s ease-in-out;
-        
-//     }
-//     &:hover,
-//     &:focus {
-//         color: $clr-light !important;
-//         svg {
-//             opacity: 1;
-//             transform: translateX(5px);
-//         }
-//     }
-  
-//     &.border-img-top {
-//         border-image-source: url(../images/btn/btn-accent-top-bg.svg);
-//         min-height: 54px;
-//         min-width: 281px;
-//         @include mq(sm) {
-//             min-height: 46px;
-//             min-width: 164px;
-//             padding: 11px 20px;
-//         }
-//     }
+ 
 
-// }
-// .btn__primary {
-//     border-image-source: url(../images/btn/btn-primary-bg.svg);
-//     color: $clr-dark;
-//     min-height: 54px;
-//     min-width: 239px;
-//     padding: 11px 36px;
-//     @include mq(sm) {
-//         min-height: 46px;
-//         min-width: 164px;
-//         padding: 11px 20px;
-//     }
-//     svg {
-//         opacity: .5;
-//         transition: all .3s ease-in-out; 
-//         position: relative;
-//         top: 2px;
-//     }
-//     &:hover,
-//     &:focus {
-//         color: $clr-dark !important;
-        
-//         svg {
-//             opacity: 1;
-//             transform: translateX(5px);
-//         }
-//     }
-// }
-
-
+}

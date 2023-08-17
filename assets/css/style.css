@@ -60,6 +60,39 @@ h4 {
   line-height: 60px;
 }
 
+.btn {
+  font-size: 17px;
+  line-height: 27px;
+  color: #F3F3F3;
+  padding: 12px 39px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  border-radius: 2px;
+}
+@media screen and (max-width: 576px) {
+  .btn {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.btn__accent {
+  background: #0056A4 !important;
+  border: 1px solid #0066B2 !important;
+}
+.btn__accent:hover, .btn__accent:focus {
+  color: #F3F3F3 !important;
+  background: #0566BE !important;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -174,13 +207,17 @@ a {
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1550px) {
   .container {
-    max-width: 1616px;
+    max-width: 1490px;
   }
 }
 @media screen and (max-width: 576px) {
   .container {
     padding-inline: 20px;
   }
+}
+
+.container-fluid {
+  margin: 0 80px;
 }/*# sourceMappingURL=style.css.map */

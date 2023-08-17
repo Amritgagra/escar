@@ -4,9 +4,9 @@
 @import './btns';
 @import './global';
 
-@media screen and (min-width: 1700px){
+@media screen and (min-width: 1550px){
     .container {
-        max-width: 1616px;
+        max-width: 1490px;
     }   
 }
 
@@ -14,4 +14,8 @@
     @include mq(sm) {
         padding-inline: 20px;
     }
+} 
+
+.container-fluid {
+    margin: 0 80px;
 } 
