@@ -231,8 +231,59 @@ a {
   height: 10px;
 }
 
+.social-sidebar {
+  height: auto;
+  width: 0px;
+  position: fixed;
+  top: 35vh;
+  padding: 10px;
+  right: 0;
+  z-index: 2;
+}
+.social-sidebar p svg {
+  left: 0px;
+  position: relative;
+  vertical-align: middle;
+  font-size: 24px;
+}
+.social-sidebar p {
+  margin-bottom: 0;
+  color: #F3F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 15px 18px;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.social-sidebar .social {
+  margin-left: -44px;
+  width: 200px;
+  padding: 0;
+  display: inline-table;
+  height: 0px;
+  background-color: rgba(128, 128, 128, 0.73);
+  -webkit-transition: margin-left 0.2s linear, background-color 0.3s linear;
+  transition: margin-left 0.2s linear, background-color 0.3s linear;
+  cursor: pointer;
+  background-color: #0056A4;
+  margin-bottom: 24px;
+}
+.social-sidebar .social:hover {
+  margin-left: -180px;
+  width: 200px;
+  background-color: #0566BE;
+}
+
 .conference {
-  margin-top: -160px;
+  top: -260px;
+  position: relative;
 }
 .conference .custom-card {
   padding: 38px 40px;
@@ -259,6 +310,9 @@ a {
   height: 160px;
   background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(20%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+  position: relative;
+  bottom: -80px;
+  z-index: -1;
 }
 
 .swiper-button-prev::after,
