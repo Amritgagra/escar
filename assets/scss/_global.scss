@@ -10,6 +10,10 @@ a {
     min-height: 100vh;
 }
 
+.line-h-sm {
+    line-height: 30px;
+}
+
 .object-cover {
     object-fit: cover;
 }
@@ -204,8 +208,16 @@ br {
     }
 }
 
-
-
+//interested
+.interested {
+    margin-top: -100px;
+    min-height: 891px;
+    background:linear-gradient(to right , rgba($clr-black,.65),rgba($clr-black,.65)), url(../images/interested-bg-img.png) no-repeat center/cover;
+    &__content {
+        max-width: 777px;
+        margin: 0 auto;
+    }
+}
 
 
 

@@ -108,6 +108,10 @@ a {
   min-height: 100vh;
 }
 
+.line-h-sm {
+  line-height: 30px;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -313,6 +317,17 @@ a {
   position: relative;
   bottom: -80px;
   z-index: -1;
+}
+
+.interested {
+  margin-top: -100px;
+  min-height: 891px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/interested-bg-img.png) no-repeat center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/interested-bg-img.png) no-repeat center/cover;
+}
+.interested__content {
+  max-width: 777px;
+  margin: 0 auto;
 }
 
 .swiper-button-prev::after,
