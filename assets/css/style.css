@@ -109,7 +109,7 @@ a {
 }
 
 .line-h-sm {
-  line-height: 30px;
+  line-height: 26px;
 }
 
 .object-cover {
@@ -141,6 +141,10 @@ a {
   .mb-70 {
     margin-bottom: 30px;
   }
+}
+
+.link {
+  text-transform: uppercase;
 }
 
 .text__accent {
@@ -328,6 +332,60 @@ a {
 .interested__content {
   max-width: 777px;
   margin: 0 auto;
+}
+.interested-cards-wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-wrapper {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+.img-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px;
 }
 
 .swiper-button-prev::after,
