@@ -37,6 +37,7 @@ h2 {
   line-height: 55px;
   font-weight: 600;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 @media screen and (max-width: 576px) {
   h2 {
@@ -143,6 +144,19 @@ a {
   }
 }
 
+.mb-90 {
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 992px) {
+  .mb-90 {
+    margin-bottom: 40px;
+  }
+}
+
+.gap-54 {
+  gap: 50px;
+}
+
 .link {
   text-transform: uppercase;
 }
@@ -237,6 +251,17 @@ a {
 .arrow-icon {
   width: 10px;
   height: 10px;
+}
+
+.grid-col-2 {
+  grid-template-columns: 215px repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-col-2 .left {
+  grid-column: 2;
+}
+.grid-col-2 .right {
+  grid-column: 3;
 }
 
 .social-sidebar {
@@ -386,6 +411,31 @@ a {
           justify-content: center;
   text-align: center;
   padding: 10px;
+}
+
+.sponsor__content {
+  max-width: 724px;
+}
+.sponsor .img-gradeint--white {
+  position: relative;
+}
+.sponsor .img-gradeint--white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.our-sponsor {
+  padding: 80px 0;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/our-sponsors/our-sponsor-bg.png) no-repeat center/cover;
 }
 
 .swiper-button-prev::after,

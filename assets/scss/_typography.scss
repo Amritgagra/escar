@@ -38,6 +38,7 @@ h2{
     line-height: 55px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 26px;
     @include mq(sm){
         font-size: 30px;
         line-height: 35px;
