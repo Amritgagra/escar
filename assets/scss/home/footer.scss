@@ -1,68 +1,46 @@
 @import '../variables';
 @import '../mixins';
 
-// .footer{
-//     border-radius: 32px 32px 0 0 ;
-//     margin-top: -32px;
-//     @include mq(sm) {
-//         border-radius:20px 20px 0 0;
-//     }
-//     &-logo {
-//         @include mq(xl) {
-//             max-width: 400px;
-//         }
-//         @include mq(md) {
-//             max-width: 176px;
-//         }
-//     }
-//     &__content {
-//         border-top: 1px solid rgba($color: $clr-white, $alpha: .5);
-//         border-bottom: 1px solid rgba($color: $clr-white, $alpha: .5);
-//         padding-block:45px 56px ;
-//     }
-//     p,a {
-//         color: $clr-light;
-//         font-size:17px;
-//         font-weight: 400;
-//         @include mq(md) {
-//             font-size:13px;
-//         }
-//     }
-//     .link-hover {
-//         display: block; 
-//     }
-//     .copyright__content {
-//         padding: 20px 0; 
-//         p,a {
-//             font-family: 'Hanken Grotesk', sans-serif;
-//             font-style: italic;
-//             font-size: 20px;
-//             font-weight: 500;
-//             @include mq(md) {
-//                 font-size:16px;
-//             }
-//         }
-//     }
-//     .back-to-top {
-//         svg {
-//             transition: transform .3s ease-in-out;
-//         }
-//         &:hover  {
-//             svg {
-//                 transform: translateY(-5px);
-//             }
-//             g {
-//                 opacity: 1;
-//             }
-//         }
-//     }
-//     .link-hover::after  {
-//         background-position: left !important;
-//     }
+.footer{
+    background: $clr-dark;
+        &__header {
+            background:linear-gradient(4deg, rgba($color:$clr-dark, $alpha: .45),rgba($color:$clr-dark, $alpha: .45)), url(../images/footer-bg.png) no-repeat center/cover;
+            min-height: 429px;
+        }
+        &__content-wrapper {
+            padding-block:80px;
+        }
+        h5 {
+            color: $clr-light;
+            margin-bottom: 30px;
+            font-size: 17px;
+            line-height: 26px;
+            font-weight: 500;
+        }
+        .list {
+            padding-left: 0;
+            &__link {
+                color: $clr-light;
+                line-height: 35px;
+            }
+        }
 
-//     address {
-//         br {
-//             display: block;
-//         }
-//     }
-// }
+        .copyright-section {
+            padding-top: 90px;
+        }
+
+        .btn-top {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            padding: 0;
+            background: $clr-accent;
+            &:hover,
+            &:focus {
+                background: $clr-accent;
+            }
+            img {
+                transform: rotate(90deg);
+            }
+        }
+}

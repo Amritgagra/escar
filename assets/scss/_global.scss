@@ -359,7 +359,7 @@ br {
 }
 
 .newsletter {
-    background:linear-gradient(4deg, rgba($color:$clr-black, $alpha: .45),rgba($color:$clr-black, $alpha: .45)),url(../images/newsletter-bg.png) no-repeat center/cover;
+    background:linear-gradient(4deg, rgba($color:$clr-dark, $alpha: .45),rgba($color:$clr-dark, $alpha: .45)),url(../images/newsletter-bg.png) no-repeat center/cover;
     min-height: 404px;
 
     .form-control {

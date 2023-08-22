@@ -482,7 +482,7 @@ a {
 }
 
 .newsletter {
-  background: linear-gradient(4deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/newsletter-bg.png) no-repeat center/cover;
+  background: linear-gradient(4deg, rgba(22, 22, 21, 0.45), rgba(22, 22, 21, 0.45)), url(../images/newsletter-bg.png) no-repeat center/cover;
   min-height: 404px;
 }
 .newsletter .form-control {
@@ -579,5 +579,5 @@ a {
 }
 
 .container-fluid {
-  margin: 0 80px;
+  padding: 0 80px;
 }/*# sourceMappingURL=style.css.map */
