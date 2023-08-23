@@ -22,9 +22,6 @@ a {
 
 .mb-30 {
     margin-bottom: 30px;
-    @include mq(lg) {
-        margin-bottom: 15px;
-    }
 }
 .mb-50 {
     margin-bottom: 50px;
@@ -53,9 +50,23 @@ a {
 .link {
     text-transform: uppercase;
     color: $clr-light;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 90%;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: $clr-white;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
     &:hover {
         color: $clr-light !important; 
-        text-decoration: underline;
+    }
+    &:hover::after {
+        opacity: 1;
     }
 }
 
@@ -93,6 +104,7 @@ a {
         color: $clr-accent !important;
     }
 }
+
 
 
 
@@ -138,6 +150,11 @@ br {
     }
 }
 
+.section__content {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
 .caleder-icon { 
     width: 16px; 
     height: 15px; 
@@ -150,14 +167,32 @@ br {
   .grid-col-2 {
     grid-template-columns:  repeat(2,1fr);
     gap: 20px;
-
+    @include mq(lg) {
+        grid-template-columns:  1fr;
+        gap: 50px;
+        padding: 12px;
+    }
     &--left {
         grid-template-columns: 215px repeat(2,1fr); 
+        @include mq(xxxl) {
+            grid-template-columns: 5% repeat(2,1fr); 
+        }
+        @include mq(lg) {
+            grid-template-columns:1fr;
+            gap: 50px;
+            padding: 12px;
+        }
         .left {
             grid-column: 2;
+            @include mq(lg) {
+                grid-column: initial;
+            }
         }
         .right {
             grid-column: 3;
+            @include mq(lg) {
+                grid-column: initial;
+            }
         }
     }
    
@@ -233,12 +268,6 @@ br {
         &__content {
             max-width: 216px;
         }
-        &-link {
-            color: $clr-light;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
     }
     &::before {
         content: '';
@@ -257,10 +286,6 @@ br {
     margin-top: -100px;
     min-height: 891px;
     background:linear-gradient(to right , rgba($clr-black,.65),rgba($clr-black,.65)), url(../images/interested-bg-img.png) no-repeat center/cover;
-    &__content {
-        max-width: 777px;
-        margin: 0 auto;
-    }
     &-cards-wrapper  {
         max-width: 1110px;
         margin: 0 auto;
@@ -287,6 +312,9 @@ br {
     position: relative;
     display: inline-block;
     color: $clr-white;
+    h4 {
+        min-height: 104px;
+    }
 }
 .img-card-content {
     position: absolute;
@@ -341,11 +369,13 @@ br {
 .event {
     &__content {
         max-width: 721px;
+        p {
+            font-size: 15px;
+        }
     }
     .swiper-btns {
         max-width: 200px;
         position: relative;
-        top: 10px;
         padding-block:  50px;
         .swiper-pagination {
             bottom: 50%;
@@ -368,7 +398,7 @@ br {
         color: rgba($color: #000000, $alpha: 1.0);
         background: transparent;
         border-radius: 0;
-        padding-left: 0;
+        padding-inline: 0;
         color: $clr-light;
         font-size: 15px;
         line-height: 26px;
@@ -386,6 +416,8 @@ br {
         position: absolute;
         top: 0;
         right: 0;
+        min-width: auto;
+        font-size: 15px;
     }
 }
 

@@ -8,7 +8,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 26px;
-  color: #000;
+  color: #161615;
 }
 @media screen and (max-width: 992px) {
   body {
@@ -79,6 +79,7 @@ h4 {
           justify-content: center;
   font-weight: 500;
   border-radius: 2px;
+  min-width: 149px;
 }
 @media screen and (max-width: 576px) {
   .btn {
@@ -125,11 +126,6 @@ a {
 .mb-30 {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 992px) {
-  .mb-30 {
-    margin-bottom: 15px;
-  }
-}
 
 .mb-50 {
   margin-bottom: 50px;
@@ -164,10 +160,25 @@ a {
 .link {
   text-transform: uppercase;
   color: #F3F3F3;
+  position: relative;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .link:hover {
   color: #F3F3F3 !important;
-  text-decoration: underline;
+}
+.link:hover::after {
+  opacity: 1;
 }
 
 .text__accent {
@@ -259,6 +270,11 @@ a {
   }
 }
 
+.section__content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
 .caleder-icon {
   width: 16px;
   height: 15px;
@@ -273,14 +289,43 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+@media screen and (max-width: 992px) {
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 12px;
+  }
+}
 .grid-col-2--left {
   grid-template-columns: 215px repeat(2, 1fr);
+}
+@media screen and (max-width: 1800px) {
+  .grid-col-2--left {
+    grid-template-columns: 5% repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  .grid-col-2--left {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 12px;
+  }
 }
 .grid-col-2--left .left {
   grid-column: 2;
 }
+@media screen and (max-width: 992px) {
+  .grid-col-2--left .left {
+    grid-column: initial;
+  }
+}
 .grid-col-2--left .right {
   grid-column: 3;
+}
+@media screen and (max-width: 992px) {
+  .grid-col-2--left .right {
+    grid-column: initial;
+  }
 }
 
 .social-sidebar {
@@ -345,16 +390,6 @@ a {
 .conference .card__content {
   max-width: 216px;
 }
-.conference .card-link {
-  color: #F3F3F3;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
-}
 .conference::before {
   content: "";
   display: block;
@@ -372,10 +407,6 @@ a {
   min-height: 891px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(../images/interested-bg-img.png) no-repeat center/cover;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/interested-bg-img.png) no-repeat center/cover;
-}
-.interested__content {
-  max-width: 777px;
-  margin: 0 auto;
 }
 .interested-cards-wrapper {
   max-width: 1110px;
@@ -403,6 +434,9 @@ a {
   position: relative;
   display: inline-block;
   color: #fff;
+}
+.card-img-wrapper h4 {
+  min-height: 104px;
 }
 
 .img-card-content {
@@ -465,10 +499,12 @@ a {
 .event__content {
   max-width: 721px;
 }
+.event__content p {
+  font-size: 15px;
+}
 .event .swiper-btns {
   max-width: 200px;
   position: relative;
-  top: 10px;
   padding-block: 50px;
 }
 .event .swiper-btns .swiper-pagination {
@@ -491,7 +527,7 @@ a {
   color: black;
   background: transparent;
   border-radius: 0;
-  padding-left: 0;
+  padding-inline: 0;
   color: #F3F3F3;
   font-size: 15px;
   line-height: 26px;
@@ -530,6 +566,8 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  min-width: auto;
+  font-size: 15px;
 }
 
 .swiper-button-prev::after,
@@ -572,12 +610,16 @@ a {
     max-width: 1490px;
   }
 }
-@media screen and (max-width: 576px) {
-  .container {
-    padding-inline: 20px;
-  }
-}
-
 .container-fluid {
   padding: 0 80px;
+}
+@media screen and (max-width: 1800px) {
+  .container-fluid {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-fluid {
+    padding: 0 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

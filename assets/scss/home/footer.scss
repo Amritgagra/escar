@@ -9,6 +9,9 @@
         }
         &__content-wrapper {
             padding-block:80px;
+            @include mq(md) {
+                padding-block:80px 20px;
+            }
         }
         h5 {
             color: $clr-light;
@@ -27,6 +30,9 @@
 
         .copyright-section {
             padding-top: 90px;
+            @include mq(lg) {
+                padding-top: 0px;
+            }
         }
 
         .btn-top {
@@ -35,12 +41,25 @@
             border-radius: 50%;
             padding: 0;
             background: $clr-accent;
+            min-width: auto;
             &:hover,
             &:focus {
                 background: $clr-accent;
             }
             img {
                 transform: rotate(90deg);
+            }
+        }
+        .mobile--full {
+            @include mq(lg) {
+                flex: 1 0 100%;
+                margin-bottom: 50px;
+            }
+        }
+        .mobile--half {
+            @include mq(lg) {
+                flex: 1 0 50%;
+                margin-bottom: 50px;
             }
         }
 }
