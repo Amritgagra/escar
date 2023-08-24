@@ -145,7 +145,12 @@ br {
     }
 }
 
-
+.block-padding-90 {
+    padding-block:90px;
+}
+.block-padding-60 {
+    padding-block:60px;
+}
 
 .block-padding{
     padding-block: 160px 120px;
@@ -176,9 +181,28 @@ br {
     }
 }
 
+.ps-180 {
+    padding-left: 180px;
+    @include mq(lg) {
+        padding-left: 0px;
+    }
+}
 .section__content {
     max-width: 780px;
     margin: 0 auto;
+}
+.section__content-xl {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.icon-file {
+    width: 15px;
+    height: 18px;
 }
 
 .caleder-icon { 
@@ -288,6 +312,9 @@ br {
     &__bg {
         background: url(../images/escar-europe/conference__bg.png) no-repeat center/cover;
         min-height: 404px;
+        &--callpaper {
+            background: url(../images/callpaper__bg.png) no-repeat center/cover; 
+        }
     }
     .custom-card {
         padding: 38px 40px;

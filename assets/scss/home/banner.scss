@@ -17,5 +17,9 @@
         height: 160px;
         background: linear-gradient( to top,#fff 0%,  rgba(255, 255, 255, .8) 20% , rgba(255, 255, 255, 0) 100%);
     }
+
+    &-h-md {
+        min-height: 607px;
+    }
     
 }

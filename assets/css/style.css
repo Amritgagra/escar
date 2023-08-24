@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,500&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -48,7 +48,7 @@ h2 {
 
 h3 {
   font-size: 25px;
-  line-height: 60px;
+  line-height: 30px;
   font-weight: 600;
 }
 @media screen and (max-width: 576px) {
@@ -60,7 +60,7 @@ h3 {
 
 h4 {
   font-size: 13px;
-  line-height: 60px;
+  line-height: 40px;
 }
 @media screen and (max-width: 992px) {
   h4 {
@@ -266,6 +266,14 @@ a {
   }
 }
 
+.block-padding-90 {
+  padding-block: 90px;
+}
+
+.block-padding-60 {
+  padding-block: 60px;
+}
+
 .block-padding {
   padding-block: 160px 120px;
 }
@@ -306,9 +314,32 @@ a {
   }
 }
 
+.ps-180 {
+  padding-left: 180px;
+}
+@media screen and (max-width: 992px) {
+  .ps-180 {
+    padding-left: 0px;
+  }
+}
+
 .section__content {
   max-width: 780px;
   margin: 0 auto;
+}
+
+.section__content-xl {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.w-250 {
+  width: 250px;
+}
+
+.icon-file {
+  width: 15px;
+  height: 18px;
 }
 
 .caleder-icon {
@@ -421,6 +452,9 @@ a {
 .conference__bg {
   background: url(../images/escar-europe/conference__bg.png) no-repeat center/cover;
   min-height: 404px;
+}
+.conference__bg--callpaper {
+  background: url(../images/callpaper__bg.png) no-repeat center/cover;
 }
 .conference .custom-card {
   padding: 38px 40px;

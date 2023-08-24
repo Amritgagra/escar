@@ -46,7 +46,7 @@
             display: none;
             }
         }
-        &:hover::after,&:focus::after{
+        &:hover::after{
           opacity: 1;
         }
         &.active {
