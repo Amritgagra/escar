@@ -214,6 +214,10 @@ a {
   background: #F3F3F3;
 }
 
+.bg__light-100 {
+  background: #f5f5f5;
+}
+
 .bg__dark {
   background: #161615;
 }
@@ -227,6 +231,29 @@ a {
 }
 .link--primary:hover {
   color: #0066B2 !important;
+}
+
+.list--box .list__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list--box .list__item::before {
+  content: "";
+  width: 7px;
+  height: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 7px;
+          flex: 0 0 7px;
+  background: #0066B2;
+  display: block;
+  margin-right: 14px;
+  position: relative;
+  top: 10px;
 }
 
 .fw-medium {
