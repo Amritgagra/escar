@@ -19,7 +19,7 @@
         @include mq(xxl){
           padding-inline:20px;
         }
-        @include mq(lg){
+        @include mq(xl){
           padding:0 0 20px;
         }
        }
@@ -42,6 +42,9 @@
             border: 0;
             opacity: 0;
             transition: opacity .3s ease-in-out;
+            @include mq(xl) {
+            display: none;
+            }
         }
         &:hover::after,&:focus::after{
           opacity: 1;
@@ -57,6 +60,9 @@
       &:focus {
         box-shadow: none;
       }
+      svg rect {
+        fill: $clr-accent;
+      }
       }
 
      
@@ -65,16 +71,19 @@
      
       .offcanvas {
         width: 100%;
-        background: rgba($color: $clr-dark, $alpha: 1);
-        @include mq(lg){
+        background: $clr-white;
+        @include mq(xl){
           padding:30px;
           min-height: 100vh;
         }
         @include mq(sm){
           padding:20px;
         }
+        .offcanvas-header {
+          padding-right: 0;
+        }
         .btn-close {
-          background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+          background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230066B2'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
           border: 0;
           border-radius: 0;
           opacity: 1;
@@ -92,8 +101,17 @@
       .dropdown-menu {
         border: 0;
         padding-top: 70px;
+        @include mq(xl){
+          margin-top: 20px;
+          padding-top: 8px;
+          background: #f5f5f5;
+          min-width: initial;
+        }
        .dropdown-item {
         padding-inline: 27px;
+        @include mq(xl){
+          text-align: center;
+        }
         &:hover {
           background: transparent;
         }
@@ -109,6 +127,9 @@
           min-height: 290px;
           background: #f5f5f5;
           z-index: -1;
+          @include mq(xl){
+            display: none;
+          }
         }
       }
 }

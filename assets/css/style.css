@@ -62,6 +62,11 @@ h4 {
   font-size: 13px;
   line-height: 60px;
 }
+@media screen and (max-width: 992px) {
+  h4 {
+    line-height: 24px;
+  }
+}
 
 .btn {
   font-size: 17px;
@@ -116,6 +121,10 @@ a {
 
 .line-h-sm {
   line-height: 26px;
+}
+
+.line-h-md {
+  line-height: 35px;
 }
 
 .object-cover {
@@ -381,6 +390,10 @@ a {
 .conference {
   top: -260px;
   position: relative;
+}
+.conference__bg {
+  background: url(../images/escar-europe/conference__bg.png) no-repeat center/cover;
+  min-height: 404px;
 }
 .conference .custom-card {
   padding: 38px 40px;

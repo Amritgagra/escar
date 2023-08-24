@@ -11,6 +11,20 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3.4,
+          spaceBetween: 42,
+        },
+      },
    });
    var swiper = new Swiper(".event-swiper", {
     slidesPerView: 1,
@@ -34,31 +48,3 @@
 //         $('.navbar').removeClass('active');
 //     }
 // });
-
-
-
-//   let observer = new IntersectionObserver(entries => {
-//       function counter(id, start, end, duration) {
-//         let obj = document.querySelector(id),
-//          current = start,
-//          range = end - start,
-//          increment = end > start ? 1 : -1,
-//          step = Math.abs(Math.floor(duration / range)),
-//          timer = setInterval(() => {
-//           current += increment;
-//           obj.textContent = current;
-//           if (current == end) {
-//            clearInterval(timer);
-//           }
-//          }, step);
-//        }
-//    counter(".counter1", 0, 17, 3000);
-//       counter(".counter2", 0, 56, 3000);
-//       counter(".counter3", 0, 300, 3000);
-//       counter(".counter4", 0, 6, 3000);
-//       counter(".counter5", 0, 155, 3000);
-//       counter(".counter6", 0, 14, 3000);
-//    });
-   
-//    observer.observe(target);
-

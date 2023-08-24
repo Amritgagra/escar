@@ -15,6 +15,9 @@ a {
 .line-h-sm {
     line-height: 26px;
 }
+.line-h-md {
+    line-height: 35px;
+}
 
 .object-cover {
     object-fit: cover;
@@ -259,6 +262,10 @@ br {
 .conference {
     top: -260px;
     position: relative;
+    &__bg {
+        background: url(../images/escar-europe/conference__bg.png) no-repeat center/cover;
+        min-height: 404px;
+    }
     .custom-card {
         padding: 38px 40px;
         background: $clr-accent-dark;
