@@ -136,6 +136,10 @@ a {
      object-fit: cover;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -730,9 +734,106 @@ a {
   grid-template-columns: 1fr;
   justify-items: center;
 }
+@media screen and (max-width: 768px) {
+  .gallery-btn-container div {
+    text-align: center;
+  }
+}
 .gallery-btn-container .btn__accent {
   min-width: 404px;
   margin: 0 42px 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .gallery-btn-container .btn__accent {
+    min-width: initial;
+    margin: 0 0px 30px 0;
+    white-space: nowrap;
+  }
+}
+
+.history .timeline {
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+}
+.history .timeline .timeline-container {
+  position: relative;
+  width: 100%;
+}
+.history .timeline .timeline-continue {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 60px;
+}
+.history .timeline .timeline-continue::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  background: #707070;
+}
+@media screen and (max-width: 767px) {
+  .history .timeline .timeline-continue::after {
+    left: -6px;
+  }
+}
+.history .timeline .timeline__heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 8px;
+  background: #0066B2;
+  border-radius: 15px;
+  z-index: 1;
+}
+.history .timeline .row.timeline-left .timeline__heading::after {
+  right: -21px;
+}
+@media screen and (max-width: 767px) {
+  .history .timeline .row.timeline-left .timeline__heading::after {
+    right: initial;
+    left: -16px;
+  }
+}
+.history .timeline .row.timeline-right .timeline__heading::after {
+  left: -22px;
+}
+@media screen and (max-width: 767px) {
+  .history .timeline .row.timeline-right .timeline__heading::after {
+    left: -16px;
+  }
+}
+.history .timeline .timeline-box {
+  position: relative;
+  padding-inline: 5px;
+}
+.history .timeline .timeline-box .timeline-text {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .history .timeline .timeline .timeline-continue::after {
+    left: 40px;
+  }
+  .history .timeline .timeline .row.timeline-left,
+  .history .timeline .timeline .row.timeline-right {
+    text-align: left;
+  }
+  .history .timeline .timeline .timeline-box {
+    margin-left: 55px;
+  }
+  .history .timeline .timeline .row.timeline-left .timeline-box::after {
+    left: -20px;
+    border-color: transparent #ffffff transparent transparent;
+  }
+  .history .timeline .timeline .row.timeline-left .timeline-box::before {
+    left: -22px;
+    border-color: transparent #dddddd transparent transparent;
+  }
 }
 
 .swiper-button-prev::after,
