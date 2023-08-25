@@ -71,7 +71,7 @@ h4 {
 .btn {
   font-size: 17px;
   line-height: 27px;
-  color: #F3F3F3;
+  color: #F3F3F3 !important;
   padding: 12px 39px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -208,6 +208,10 @@ a {
 
 .text__dark {
   color: #161615;
+}
+
+.text__xsm {
+  font-size: 14px;
 }
 
 .bg__accent {
@@ -648,6 +652,69 @@ a {
   font-size: 15px;
 }
 
+.registration .price {
+  color: #C2C2C2;
+  text-decoration: line-through;
+}
+.registration .discount-price {
+  font-weight: 600;
+  font-size: 23px;
+}
+.registration .vat {
+  font-size: 13px;
+}
+.registration-counter button, .registration-counter input {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border-radius: 2px;
+  border: 1px solid #C2C2C2;
+  padding: 8px 12px;
+  height: 54px;
+}
+@media screen and (max-width: 992px) {
+  .registration-counter button, .registration-counter input {
+    height: 50px;
+  }
+}
+.registration-counter input {
+  border-inline: 0;
+  border-radius: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: center;
+  height: auto;
+}
+@media screen and (max-width: 992px) {
+  .registration-counter input {
+    max-width: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .registration-counter input {
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+  }
+}
+.registration-counter input:focus {
+  outline: none;
+}
+.registration .btn-counter {
+  min-width: 304px;
+}
+@media screen and (max-width: 576px) {
+  .registration .btn-counter {
+    width: 100%;
+  }
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -693,7 +760,7 @@ a {
 }
 @media screen and (max-width: 1800px) {
   .container-fluid {
-    padding: 0 10%;
+    padding: 0 5%;
   }
 }
 @media screen and (max-width: 576px) {

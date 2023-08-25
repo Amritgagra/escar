@@ -90,6 +90,9 @@ a {
     color: $clr-dark;
 }
 
+.text__xsm {
+    font-size: 14px;
+}
 .bg__accent {
     background: $clr-accent;
 }
@@ -481,12 +484,59 @@ br {
     }
 }
 
-// conference-detail
-// .conference-detail {
+// registration
+.registration {
+    .price {
+        color: $clr-dark-300;
+        text-decoration: line-through;
+    }
+    .discount-price {
+        font-weight: 600;
+        font-size: 23px;
+    }
+    .vat {
+        font-size: 13px;
+    }
+    &-counter {
+        button,input {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: 2px;
+            border: 1px solid $clr-dark-300;
+            padding: 8px 12px;
+            height: 54px;
+            @include mq(lg) {
+                 height: 50px;
+            }
+        }
+        input {
+            border-inline:0;
+            border-radius: 0;
+            align-self: flex-start;
+            text-align: center;
+            height: auto;
+            @include mq(lg) {
+                max-width: 80px;
+                
+            }
+            @include mq(sm) {
+                align-self: stretch;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .btn-counter {
+        min-width: 304px;
+        @include mq(sm) {
+            width: 100%;
+        }
+    }
 
-// }
-
-
+}
 
 
 
