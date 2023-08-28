@@ -308,6 +308,37 @@ br {
     
             
     }
+    
+    // form
+    .form {
+        .form-control {
+            border: 0;
+            border-bottom:1px solid $clr-light;
+            color: rgba($color: #000000, $alpha: 1.0);
+            background: transparent;
+            border-radius: 0;
+            padding-inline: 0;
+            color: $clr-light;
+            font-size: 15px;
+            line-height: 26px;
+            &::placeholder {
+                color: $clr-light;
+                font-size: 15px;
+                line-height: 26px;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .btn__form {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: auto;
+            font-size: 15px;
+        }
+    }
 
   
  
@@ -457,33 +488,7 @@ br {
     background:linear-gradient(4deg, rgba($color:$clr-dark, $alpha: .45),rgba($color:$clr-dark, $alpha: .45)),url(../images/newsletter-bg.png) no-repeat center/cover;
     min-height: 404px;
 
-    .form-control {
-        border: 0;
-        border-bottom:1px solid $clr-light;
-        color: rgba($color: #000000, $alpha: 1.0);
-        background: transparent;
-        border-radius: 0;
-        padding-inline: 0;
-        color: $clr-light;
-        font-size: 15px;
-        line-height: 26px;
-        &::placeholder {
-            color: $clr-light;
-            font-size: 15px;
-            line-height: 26px;
-        }
-        &:focus {
-            outline: none;
-            box-shadow: none;
-        }
-    }
-    .btn__form {
-        position: absolute;
-        top: 0;
-        right: 0;
-        min-width: auto;
-        font-size: 15px;
-    }
+   
 }
 
 // registration
