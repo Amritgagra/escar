@@ -76,6 +76,11 @@ a {
     &:hover::after {
         opacity: 1;
     }
+    &-dark {
+        &::after {
+            background: $clr-black;
+        }
+    }
 }
 
 .text__accent {

@@ -197,6 +197,9 @@ a {
 .link:hover::after {
   opacity: 1;
 }
+.link-dark::after {
+  background: #000;
+}
 
 .text__accent {
   color: #0066B2 !important;
