@@ -734,6 +734,19 @@ br {
 }
 
 
+// program
+.program {
+    &-btns-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        .btn__accent {
+            min-width: 247px;
+        }
+    }
+}
+
+
 
 
 

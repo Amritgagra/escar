@@ -915,6 +915,18 @@ p {
   }
 }
 
+.program-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+.program-btns-container .btn__accent {
+  min-width: 247px;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
