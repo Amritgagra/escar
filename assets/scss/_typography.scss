@@ -29,8 +29,9 @@ h1{
     color: $clr-light;
     margin-bottom: 24px;
     @include mq(sm){
-        font-size: 35px;
+        font-size: 32px;
         line-height:45px;
+        margin-block:30px 70px;
     }
 }
 h2{
@@ -42,6 +43,7 @@ h2{
     @include mq(sm){
         font-size: 30px;
         line-height: 35px;
+        margin-bottom: 50px !important;
     }
 }
 
@@ -51,7 +53,7 @@ h3{
     font-weight: 600;
     @include mq(sm){
         font-size: 20px;
-        line-height: 30px;
+        line-height: 24px;
     }
 }
 
@@ -60,5 +62,6 @@ h4{
     line-height: 40px;
     @include mq(lg){
         line-height: 24px;
+        margin-bottom: 30px;
     }
 }

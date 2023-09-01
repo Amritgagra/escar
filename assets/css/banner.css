@@ -6,7 +6,7 @@
 }
 @media screen and (max-width: 992px) {
   .banner {
-    min-height: 80vh;
+    min-height: 80vh !important;
   }
 }
 .banner::after {
@@ -21,4 +21,9 @@
 }
 .banner-h-md {
   min-height: 427px;
+}
+@media screen and (max-width: 576px) {
+  .banner h3 {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=banner.css.map */

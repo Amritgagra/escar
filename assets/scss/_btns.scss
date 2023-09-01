@@ -25,3 +25,10 @@
     }
 
 }
+
+
+    @include mq(sm) {
+      .btn__accent {
+        width: 100%;
+      }
+    }  
