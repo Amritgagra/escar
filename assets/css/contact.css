@@ -7,6 +7,47 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.contact .gallery-btn-container {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 1200px) {
+  .contact .gallery-btn-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .gallery-btn-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact .gallery-btn-container {
+    justify-items: stretch;
+  }
+}
+.contact .gallery-btn-container a {
+  margin: 0 !important;
+  min-width: 393px;
+}
+@media screen and (max-width: 576px) {
+  .contact .gallery-btn-container a {
+    min-width: initial;
+  }
+}
+.contact .gallery-btn-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
 
 .form.login-form {
   max-width: 724px;

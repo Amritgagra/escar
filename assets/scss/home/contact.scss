@@ -11,6 +11,34 @@
             object-fit: cover;
         }
     }
+    .gallery-btn-container {
+        display: inline-grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 30px;
+        margin-bottom: 150px;
+        @include mq(xl) {
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include mq(md) {
+            grid-template-columns: 1fr;
+        }
+        @include mq(sm) {
+            justify-items: stretch;
+        }
+        a {
+            margin: 0 !important;
+            min-width: 393px;
+            @include mq(sm) {
+                min-width: initial;
+            }
+        }
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
 }
 
 .form.login-form {
@@ -53,6 +81,7 @@
     .form-link {
         color: #C2C2C2;
     }
+
 }   
 
 .form-btns-wrapper {
