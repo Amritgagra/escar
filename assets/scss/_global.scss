@@ -758,8 +758,17 @@ br {
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
+
+        @include mq(md) {
+           justify-content:center ;
+        }
         .btn__accent {
             min-width: 247px;
+            max-width: 247px;
+            white-space: nowrap;
+            @include mq(sm) {
+               max-width: 100%;
+             }
         }
     }
 }

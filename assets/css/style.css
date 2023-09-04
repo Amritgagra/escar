@@ -946,8 +946,22 @@ p {
       flex-wrap: wrap;
   gap: 25px;
 }
+@media screen and (max-width: 768px) {
+  .program-btns-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .program-btns-container .btn__accent {
   min-width: 247px;
+  max-width: 247px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 576px) {
+  .program-btns-container .btn__accent {
+    max-width: 100%;
+  }
 }
 
 .swiper-button-prev::after,
